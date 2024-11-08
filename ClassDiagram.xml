@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library>
+  <Class Name="CommentAttribute" IsAbstract="false">
+    <Properties>
+      <Property Name="Comment" Type="String" />
+      <Property Name="TypeId" Type="Object" />
+    </Properties>
+    <Methods />
+  </Class>
+  <Class Name="Animal" IsAbstract="true">
+    <Comment>Abstract base class for all animals</Comment>
+    <Properties>
+      <Property Name="Country" Type="String" />
+      <Property Name="HideFromOtherAnimals" Type="Boolean" />
+      <Property Name="Name" Type="String" />
+      <Property Name="WhatAnimal" Type="eClassificationAnimals" />
+    </Properties>
+    <Methods>
+      <Method Name="GetFavoriteFood" ReturnType="eFavoriteFood">
+        <Parameters />
+      </Method>
+      <Method Name="SayHello" ReturnType="Void">
+        <Parameters />
+      </Method>
+      <Method Name="Dispose" ReturnType="Void">
+        <Parameters />
+      </Method>
+    </Methods>
+  </Class>
+  <Class Name="Cow" IsAbstract="false">
+    <Comment>Represents a Cow that is herbivore</Comment>
+    <Properties>
+      <Property Name="Country" Type="String" />
+      <Property Name="HideFromOtherAnimals" Type="Boolean" />
+      <Property Name="Name" Type="String" />
+      <Property Name="WhatAnimal" Type="eClassificationAnimals" />
+    </Properties>
+    <Methods>
+      <Method Name="GetFavoriteFood" ReturnType="eFavoriteFood">
+        <Parameters />
+      </Method>
+      <Method Name="SayHello" ReturnType="Void">
+        <Parameters />
+      </Method>
+    </Methods>
+  </Class>
+  <Class Name="Lion" IsAbstract="false">
+    <Comment>Represents a Lion that is carnivore</Comment>
+    <Properties>
+      <Property Name="Country" Type="String" />
+      <Property Name="HideFromOtherAnimals" Type="Boolean" />
+      <Property Name="Name" Type="String" />
+      <Property Name="WhatAnimal" Type="eClassificationAnimals" />
+    </Properties>
+    <Methods>
+      <Method Name="GetFavoriteFood" ReturnType="eFavoriteFood">
+        <Parameters />
+      </Method>
+      <Method Name="SayHello" ReturnType="Void">
+        <Parameters />
+      </Method>
+    </Methods>
+  </Class>
+  <Class Name="Pig" IsAbstract="false">
+    <Comment>Represents a Pig that is omnivore</Comment>
+    <Properties>
+      <Property Name="Country" Type="String" />
+      <Property Name="HideFromOtherAnimals" Type="Boolean" />
+      <Property Name="Name" Type="String" />
+      <Property Name="WhatAnimal" Type="eClassificationAnimals" />
+    </Properties>
+    <Methods>
+      <Method Name="GetFavoriteFood" ReturnType="eFavoriteFood">
+        <Parameters />
+      </Method>
+      <Method Name="SayHello" ReturnType="Void">
+        <Parameters />
+      </Method>
+    </Methods>
+  </Class>
+</Library>
